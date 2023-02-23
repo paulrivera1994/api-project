@@ -23,12 +23,12 @@ app.post("/cars", (req, res) => {
   res.json({ message: "ok" });
 });
 
-app.put("/dogs/:id", (req, res) => {
+app.put("/cars/:id", (req, res) => {
   console.log(req.params.id);
   console.log(req.body);
   res.json({ message: `updated car ${req.params.id}` });
 });
-app.delete("/dogs/:id", (req, res) => {
+app.delete("/cars/:id", (req, res) => {
   console.log(req.params.id);
   res.json({ message: `deleting car ${req.params.id}` });
 });
