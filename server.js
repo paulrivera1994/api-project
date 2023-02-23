@@ -40,11 +40,7 @@ http
       }
     } else if (url == "/about") {
       response.statusCode = 200;
-      response.write("About - I am Paul");
-      response.end();
-    } else if (url == "/contact") {
-      response.statusCode = 200;
-      response.write("<h1>Contact Me: paul@fakemail.net</h1");
+      response.write("About - Cars info");
       response.end();
     }
   })
